@@ -92,21 +92,6 @@ p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
     color: #efc14cff;
 }
 
-.main {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 0;
-    background-color: #FAF9F6;
-    font-family: Jost;
-}
-
-.main-container {
-    width: 65%;
-}
-
 .banner-container {
     flex-grow: 1;
     width: 100%;
@@ -132,6 +117,60 @@ p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
     font-weight: bold;
     font-size: 75px;
     text-align: center;
+}
+
+/* Media query for screens less than 850px wide */
+@media (max-width: 1150px) {
+
+    .navbar-title {
+        margin-left: 25px;
+        margin-right: 25px;
+        letter-spacing: 0.2em;
+        text-align: center;
+    }
+
+    .navbar-left {
+        text-align: center;
+    }
+    .navbar-right {
+        text-align: center;
+    }
+    
+    .navbar-link {
+        margin: 10px;
+    }
+
+    .banner-text-container {
+        width: 65%;
+        height: auto;
+    }
+    
+    .banner-text {
+        font-style: normal;
+        color: #dfe7ddff;
+        font-weight: bold;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .main-container {
+        width: 90% !important;
+    }
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0;
+    background-color: #FAF9F6;
+    font-family: Jost;
+}
+
+.main-container {
+    width: 65%;
 }
 
 .treatments-container {
