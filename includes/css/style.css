@@ -129,8 +129,9 @@ p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
 .banner-text {
     font-style: normal;
     color: #dfe7ddff;
-    font-weight: lighter;
-    font-size: 55px;
+    font-weight: bold;
+    font-size: 75px;
+    text-align: center;
 }
 
 .treatments-container {
@@ -148,6 +149,21 @@ p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
 .container-fluid {
     padding-left: 0px !important;
     padding-right: 0px !important;
+}
+
+.sta-container {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+}
+
+.sta-mbr {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-all {
@@ -207,6 +223,7 @@ p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     margin-bottom: 8px;
+    margin-top: 10px;
     font-weight: bold;
     text-decoration: none;
     color: #00000080;
