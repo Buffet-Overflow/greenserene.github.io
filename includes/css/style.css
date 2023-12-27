@@ -112,11 +112,19 @@ p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
 }
 
 .banner-text {
+    opacity: 0; /* Initially hide the text */
+    transform: translateY(20px); /* Shift the text down by 20px */
+    transition: opacity 2s ease-in-out, transform 1s ease-in-out; /* Apply transition effect */
     font-style: normal;
     color: #dfe7ddff;
     font-weight: bold;
     font-size: 75px;
     text-align: center;
+}
+
+.banner-text.fade-in {
+    opacity: 1; /* Show the text */
+    transform: translateY(0); /* Bring the text to its original position */
 }
 
 /* Media query for screens less than 850px wide */
@@ -144,13 +152,21 @@ p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
         width: 65%;
         height: auto;
     }
-    
+
     .banner-text {
+        opacity: 0; /* Initially hide the text */
+        transform: translateY(20px); /* Shift the text down by 20px */
+        transition: opacity 2s ease-in-out, transform 1s ease-in-out; /* Apply transition effect */
         font-style: normal;
         color: #dfe7ddff;
         font-weight: bold;
         font-size: 35px;
         text-align: center;
+    }
+    
+    .banner-text.fade-in {
+        opacity: 1; /* Show the text */
+        transform: translateY(0); /* Bring the text to its original position */
     }
 
     .main-container {
@@ -183,6 +199,17 @@ p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.voucher-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.voucher-info {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .container-fluid {
@@ -253,6 +280,16 @@ p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
     flex-direction: column;
 }
 
+.footer .contact-container a {
+    color: inherit; /* Use the color of the parent element */
+    text-decoration: none; /* Remove the underline */
+}
+
+.footer .contact-container a:hover {
+    color: #efc14cff;
+    transition: 0.3s;
+}
+
 .footer-title {
     text-align: center;
     display: block;
@@ -267,11 +304,6 @@ p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
     text-decoration: none;
     color: #00000080;
     letter-spacing: 0.2em;    
-}
-
-.footer-title:hover {
-    color: #efc14cff;
-    transition: 0.3s;
 }
 
 .footer-address {
