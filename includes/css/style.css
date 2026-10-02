@@ -193,6 +193,10 @@ p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
     margin-top: 20px;
 }
 
+.alert .alert-link {
+    text-decoration: none;
+}
+
 .book-button {
     display: flex;
     align-items: center;

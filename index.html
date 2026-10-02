@@ -14,6 +14,12 @@
     <script src="includes/js/bootsrap.bundle.min.js"></script>
   </head>
   <body>
+    <div class="alert alert-light alert-dismissible fade show text-start" role="alert">
+        <p class="fw-semibold mb-0">New Treatments Available</p>
+        <p class="fw-normal mb-0">We are excited to announce the addition of Oncology, and Fibrotherapy massage. Interested to learn more? Take a look at our <a href="#treatments" class="alert-link">treatments</a>.</p>
+        <p class="fw-normal mb-0">Also coming soon: Manual Lymphatic Drainage, and Menopause Massage. Be sure to check back regularly for updates!</p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
     <div class="navbar">
         <header class="header">
             <div class="navbar-container">
@@ -41,27 +47,38 @@
                 <div class="accordion w-100" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header shadow-sm p-0 mb-0 bg-body-tertiary">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseZero" aria-expanded="true" aria-controls="panelsStayOpen-collapseZero">
+                        Oncology Massage
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseZero" class="accordion-collapse collapse">
+                            <div class="accordion-body" id="Oncology-Massage">
+                                <p class="fw-medium">A moment of tranquility in your cancer journey. Our specialised Oncology massages are tailored to your unique needs, providing a soothing and gentle touch to help alleviate pain, reduce stress, and promote relaxation.</p>
+                                <p class="fw-medium">This treatment is not just for cancer warriors, it also benefits those with anxiety, stress, arthritis, and more.</p>
+                                <hr>
+                                <p class="fs-5 fw-medium">Cancer Patients</p>
+                                <p class="fw-light">Initial appointment/treatment for those with, or are recovering from cancer (including consultation)</p>
+                                <p class="fw-light fst-italic">Free | 80 minutes</p>
+                                <p class="fw-light">Discounted treatments thereafter to include a donation to our local Hospice. Please contact us for more information.</p>
+                                <p class="fs-5 fw-medium">Other chronic conditions</p>
+                                <p class="fw-light fst-italic">£50 | 60 minutes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item"></div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header shadow-sm p-0 mb-0 bg-body-tertiary">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                        Sports/Remedial Massage
+                        Fibrotherapy Massage
                         </button>
                         </h2>
                         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-                            <div class="accordion-body" id="Sports-Massage">
-                                <p class="fw-medium">Sports massage is proven to release and reduce tension in muscles, tendons and ligaments. It improves blood circulation and removes waste products through the lymphatic system. It also aids and speeds up recovery as well as helping improve performance. Whether a sports person, a gym enthusiast, or simply working at a desk all day, Sports massage has considerable benefits.</p>
-                                <p class="fw-medium">Not sure if sports therapy is for you? Book a <span class="fw-bold">free</span> 15 minute consultation to find out how it can help you.</p>
+                            <div class="accordion-body" id="Fibrotherapy-Massage">
+                                <p class="fw-medium">Gentle relief for chronic pain. This treatment can be for anyone with fibromyalgia, anxiety, poor sleep, digestive issues, or nervous system dysregulation.</p>
+                                <p class="fw-medium">A natural and gentle solution combining massage, acupressure, breakthwork and vagus nerve stimulation. Pain free, deeply relaxing and highly effective. This also includes auricular therapy (ear seeds) for lasting relief.</p>
                                 <hr>
-                                <p class="fs-5 fw-medium">Initial Appointment</p>
-                                <p class="fw-light fst-italic">£50 | 90 minutes</p>
-                                <p class="fw-light">Includes consultation, postural assessment, range of movement testing and treatment.</p>
-                                <p class="fs-5 fw-medium">Follow Up / Maintenance</p>
-                                <p class="fw-light fst-italic">£50 | 90 minutes</p>
-                                <p class="fw-light fst-italic">£40 | 60 minutes</p>
-                                <p class="fw-light">Regular massage reduces muscle tension, speeds up soft tissue recovery and eases sore and tired muscles. It can also help in improving the range of movement of a joint.</p>
-                                <p class="fs-5 fw-medium">Targeted Follow Up</p>
-                                <p class="fw-light fst-italic">£35 | 45 minutes</p>
-                                <p class="fw-light">Focuses on the area which is causing the pain or injury.</p>
-                                <p class="fs-5 fw-medium">What To Wear</p>
-                                <p class="fw-light">Please wear (or bring with you) a t-shirt and shorts/fitted leggings, ideally with an elasticated waistband.</p>
+                                <p class="fs-5 fw-medium">All Appointments</p>
+                                <p class="fw-light fst-italic">£50 | 60 minutes</p>
                             </div>
                         </div>
                     </div>
